@@ -15,6 +15,7 @@ import Revenue from "../Revenue/Revenue";
 import "react-datepicker/dist/react-datepicker.css";
 import SalesDetail from "../SalesDetail/SalesDetail";
 import Footer from "../Footer/Footer";
+import UniqueVisitors from "../UniqueVisitors/UniqueVisitors";
 
 const Main = () => {
   const [startDate, setStartDate] = useState(new Date());
@@ -78,6 +79,7 @@ const Main = () => {
             </div>
           </div>
           <WeeklyCalculation></WeeklyCalculation>
+          <UniqueVisitors></UniqueVisitors>
           <Revenue></Revenue>
           <SalesDetail></SalesDetail>
           <Footer></Footer>

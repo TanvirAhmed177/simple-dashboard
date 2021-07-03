@@ -2,11 +2,8 @@ import React from "react";
 import { Line } from "react-chartjs-2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faEllipsisH } from "@fortawesome/free-solid-svg-icons";
-import line1 from "../../../images/line1.JPG";
-import line2 from "../../../images/line2.JPG";
-import line3 from "../../../images/line3.JPG";
-import line4 from "../../../images/line4.JPG";
-import line5 from "../../../images/line5.JPG";
+import MapChart from "../MapChart/MapChart";
+
 const Revenue = () => {
   return (
     <div>
@@ -19,8 +16,8 @@ const Revenue = () => {
             borderRadius: "10px",
           }}
         >
-          <div className="card-body d-flex pb-0 ">
-            <h5 className="card-title">Total Revenue</h5>
+          <div className=" d-flex pt-4  px-3 ">
+            <h5 className="card-title ">Total Revenue</h5>
             <a className="ml-auto mr-2 sales-icon" href="#">
               <FontAwesomeIcon icon={faEllipsisH} />
             </a>
@@ -105,6 +102,7 @@ const Revenue = () => {
             />
           </div>
         </div>
+
         <div
           className="card"
           style={{
@@ -113,69 +111,45 @@ const Revenue = () => {
             borderRadius: "10px",
           }}
         >
-          <div className="card-body d-flex pb-0">
-            <h5 className="card-title mb-0">Source of Revenue Generated</h5>
+          <div className="card-body d-flex pb-0 ">
+            <h5 className="card-title mb-0">Sales By Location</h5>
             <a className="ml-auto mr-2 sales-icon" href="#">
               <FontAwesomeIcon icon={faEllipsisH} />
             </a>
           </div>
-
+          <hr />
+          <div className="card-body" style={{ height: "330px" }}>
+            <MapChart></MapChart>
+          </div>
           <div className="card-body pt-0">
             <table className="table table-hover">
               <thead>
                 <tr>
-                  <th scope="col">Name of Source</th>
-                  <th scope="col">Visitors</th>
-                  <th scope="col">Page View</th>
+                  <th scope="col">Top Location</th>
+                  <th scope="col">Order</th>
                   <th scope="col">Revenue</th>
-                  <th scope="col">Trend</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Google</td>
-                  <td>23,556</td>
-                  <td>12,465</td>
-                  <td>12,465</td>
-                  <td>
-                    <img src={line1} alt="" />
-                  </td>
+                  <td>Buenos Aires</td>
+                  <td>397</td>
+                  <td>$23,324</td>
                 </tr>
                 <tr>
-                  <td>Facebook</td>
-                  <td>15,447</td>
-                  <td>11,847</td>
-                  <td>4,634</td>
-                  <td>
-                    <img src={line2} alt="" />
-                  </td>
+                  <td>La Paz</td>
+                  <td>378</td>
+                  <td>$21,378</td>
                 </tr>
                 <tr>
-                  <td>Email Marketing</td>
-                  <td>10,465</td>
-                  <td>8,540</td>
-                  <td>5,853</td>
-                  <td>
-                    <img src={line3} alt="" />
-                  </td>
+                  <td>Brasilia</td>
+                  <td>220</td>
+                  <td>$18,298</td>
                 </tr>
                 <tr>
-                  <td>Direct Website</td>
-                  <td>7,474</td>
-                  <td>5,843</td>
-                  <td>2,375</td>
-                  <td>
-                    <img src={line4} alt="" />
-                  </td>
-                </tr>
-                <tr>
-                  <td>Referral</td>
-                  <td>4,673</td>
-                  <td>2,520</td>
-                  <td>1,932</td>
-                  <td>
-                    <img src={line5} alt="" />
-                  </td>
+                  <td>Georgetown</td>
+                  <td>140</td>
+                  <td>$12,689</td>
                 </tr>
               </tbody>
             </table>
