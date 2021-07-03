@@ -1,0 +1,16 @@
+.sales-menu:hover {
+  border-bottom: 2px solid #5f63f2;
+  text-decoration: none;
+  color: #5f63f2;
+}
+.sales-menu:hover {
+  text-decoration: none;
+  color: #5f63f2;
+}
+.sales-menu {
+  padding-bottom: 32px;
+  color: grey;
+}
+.sales-icon {
+  color: grey;
+}
